@@ -1,1 +1,1 @@
-# programcion-orientada-objetos-JS
+# Programación-orientada-objetos-JS
