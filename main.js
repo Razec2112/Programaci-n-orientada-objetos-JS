@@ -10,7 +10,7 @@ const natalia = {
     }
 };
 
-function Student (name, age, cursosAprobados) {
+function Student2 (name, age, cursosAprobados) {
     this.name = name;
     this.age = age;
     this.cursosAprobados = cursosAprobados;
@@ -19,11 +19,11 @@ function Student (name, age, cursosAprobados) {
     // }
 }
 
-Student.prototype.aprobarCurso = this.aprobarCurso = function (nuevoCurso) {
+Student2.prototype.aprobarCurso = this.aprobarCurso = function (nuevoCurso) {
     this.cursosAprobados.push(nuevoCurso);
 }
 
-const juanita = new Student(
+const juanita = new Student2(
     "Juanita Alejandra",
     15,
     [
@@ -34,7 +34,7 @@ const juanita = new Student(
 
 // Prototipos con la sintaxis de clases
 
-class Student2 {
+class Student3 {
     constructor({
         name, 
         age, 
@@ -50,7 +50,7 @@ class Student2 {
     }
 }
 
-const miguelito = new Student2({
+const miguelito = new Student3({
     email: "miguelito@gmail.com",
     name:"Miguel",
     age: 28,
