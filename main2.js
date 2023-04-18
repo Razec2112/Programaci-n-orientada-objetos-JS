@@ -13,9 +13,23 @@ class Course {
         name,
         classes = [],
     }) {
-        this.name = name
+        this._name = name
         this.classes = classes
     }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(nuevoNombre) {
+        if (nuevoNombre === "curso malo de programacion"){
+            console.error("Deja de joder")
+        } else {
+            this._name = nuevoNombre
+        }
+        
+    }
+
 }
 
 const cursoProgBasica = new Course({
